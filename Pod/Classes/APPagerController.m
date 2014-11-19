@@ -307,6 +307,7 @@
         CGPoint newContentOffset = CGPointMake(contentOffset, 0);
         [self updateScrollView:_titleScrollView contentOffset:newContentOffset];
     }
+    [self.delegate pagerController:self didScrollAtIndex:_currentPageIndex];
 }
 
 #pragma mark - Helpers
